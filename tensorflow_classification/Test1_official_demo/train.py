@@ -52,6 +52,7 @@ def main():
     @tf.function
     def test_step(images, labels):
         predictions = model(images)
+        model.summary()
         t_loss = loss_object(labels, predictions)
 
         test_loss(t_loss)

@@ -18,7 +18,7 @@ def main():
     classes = ('plane', 'car', 'bird', 'cat',
                'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
-    img = Image.open('4.jpg')
+    img = Image.open('3.jpg')
     img = transform(img)  # 3*32*32
     img = torch.unsqueeze(img, dim=0)  # 增加batch，原图权值是[16, 3, 5, 5]是4维的
 
